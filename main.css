@@ -2,17 +2,18 @@ body {
     text-align: center;
     background-color: #DCDCDC;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #b8860b;
+    font-size: 20px;
 }
 .subsection {
     display: flex;
     flex-direction: column;
 }
-#card {
+.card {
     position: relative;
     align-self: center;
     padding: 20px;
     white-space: nowrap;
-    left: -10px;
 }
 .front {
     backface-visibility: hidden;
@@ -91,8 +92,7 @@ img {
 }
 
 .my_button {
-    background-color: #4CAF50;
-    /* Green */
+    background-color: #696969;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -106,8 +106,26 @@ img {
     /* Safari */
     transition-duration: 0.4s;
     align-self: center;
+    border-radius: 25px;
 }
 
 .my_button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.face.front{
+    font-weight: bolder;
+}
+
+.face.front:hover {
+    color: #808080;
+    
+}
+
+.long {
+    left: -75px;
+}
+
+.short {
+    left: -10px;
 }
